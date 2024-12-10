@@ -23,5 +23,6 @@ Pastikan sistem Anda sudah terinstal:
 1. **Clone repository ini**:
 
    ```bash
-   git clone https://github.com/username/react-auto-importer.git
-   cd react-auto-importer
+   git clone https://github.com/Gopartner/react-auto-importer.git
+
+
