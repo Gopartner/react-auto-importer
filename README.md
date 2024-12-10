@@ -25,4 +25,16 @@ Pastikan sistem Anda sudah terinstal:
    ```bash
    git clone https://github.com/Gopartner/react-auto-importer.git
 
+2. **Atur konfigurasi Vim di .vimrc atau init.vim dengan menambahkan baris berikut:
+   ```bash
+   autocmd BufWritePost *.js,*.jsx !python3 ~/react-auto-importer/auto_import_react.py %:p
 
+Penjelasan:
+
+autocmd: Perintah otomatis untuk Vim.
+
+BufWritePost: Event yang dipicu setelah file disimpan.
+
+*.js,*.jsx: Pola file yang ingin diawasi (file JavaScript dan JSX).
+
+!python3 ~/react-auto-importer/auto_import_react.py %:p: Menjalankan skrip Python dengan path lengkap file (%:p) yang sedang diedit.
